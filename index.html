@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Problem Solving</title>
+</head>
+<body>
+    <p>Q1. Check whether the year is Leap year or not.</p>
+    <pre>
+         
+var Check_Leap = (year) => 
+{
+ 
+  if(year%100===0 || year%4!==0)
+{
+  return "Non Leap Year";
+}
+else if(year%4===0)
+{
+return "Leap Year"  ;
+}
+};
+ 
+
+    </pre>
+    <p>Q2. Perfect Number Check.</p>
+<pre>
+     
+var Perfect_Check = (N) => 
+{
+  
+  let number=0;
+
+    for(let i=0;i < N ;i++){
+      if(N%i===0){
+        number+=i;
+      }
+    }  
+    if(number==N){
+      return "YES";
+    }
+    else{
+      return "NO";
+    }
+        
+};
+ 
+
+</pre>
+<p>Q3. Reverse a Number.</p>
+<pre>
+    var Reverse_Number = (N) => 
+{
+  let b=""
+  while(N>0){
+    b+=N%10;
+    N=Math.floor(N/10)
+  }
+  let c=parseInt(b);
+return (c)
+};
+</pre>
+<p>Q4. Substring Check.</p>
+<pre>
+    var Substring_Check = (S1, S2) => 
+{
+  let count=0;
+   let b=S1.split(" ");
+  //console.log(b)
+  for(let i=0;i < b.length;i++){
+ 
+    if(b[i]==S2){
+     
+      count++;
+    }
+  }
+   if(count>=1){
+   return ("YES")
+   }
+  else{
+     return ("NO")
+  }
+};
+</pre>
+<p>Q5. Find the Smaller Angle</p>
+<pre>
+    
+var Minimal_Angle = (h, m) => 
+{
+  
+  let M=m*11;
+  let H=60*h;
+    if(m===0 && h===12){
+    return 0;
+  }
+
+ else if(M>H){
+    return (M-H)/2;
+    
+  }
+  else{
+    return (H-M)/2;
+  }
+};
+ 
+
+</pre>
+</body>
+</html>

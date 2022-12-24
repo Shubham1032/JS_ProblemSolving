@@ -1,0 +1,12 @@
+body{
+    background-color: black;
+    text-align: center;
+}
+p{
+font-size: larger;
+color: red;
+}
+pre{
+    color: green;
+    font-size: larger;
+}
